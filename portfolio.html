@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first website</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "mQguPRij1ByQolSZH",
+      });
+   })();
+</script>
+    
+  
+
+</head>
+<link rel="stylesheet" href="portfolio.css">
+<body>
+    <div id="header">
+        <div class="logo">
+            <a href="">Niyas.</a>
+        </div>
+        <div class="items">
+            <a href="">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">Contact</a>
+            
+        </div>
+    </div>
+   <div class="pic">
+    <div class="logo">
+        <img src="./IMG_1497_jpg.jpg" alt="">
+
+    </div>    
+    <div class="header-text">
+        <h1>I'm Mohammed<br><span>Niyas</span> </h1>
+    </div>
+   </div>
+   <!----------------------------about section---------------------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="about-col-1">
+                <img src=""> 
+            </div> -->
+            <div class="about-col-2">
+                <h2 class="sub-title">About Me</h2>
+                <p>"My name is Mohammed Niyas,and i'm from calicut.<br>hold a degree and work as front-end developer.I enjoy creating user-friendly web interfaces."</p>
+             <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+             </div> 
+             <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>HTML</span><br>using HTML for making webpage</li><br>
+                    <li><span>CSS</span><br>using CSS for styling webpage</li><br>
+                    <li><span>BOOT STARP</span><br>using BOOT SRAP to create inhractive  webpages easily</li><br>
+                    <li><span>JAVA SCRIPT</span><br>using JAVA SCRIPT to create advanced levels webpages</li><br>
+                    <li><span>Basics of C</span><br>using C for system degining</li><br>
+                </ul>
+             </div>  
+             <div class="tab-contents" id="experience">
+                <ul style="height: 300px;">
+                    <li>Aug-2024-present<br>Frond End Developer Intern at Bridgeon Solution<br>Kozhikode</li>
+                 </ul>
+             </div>  
+             <div class="tab-contents" id="education">
+                <ul style="height: 300px;">
+                    <li>08/2021-04/2024<br>BCA at MES College Vadakara,kozhikode(calicut university)</li><br>
+                    <li>07/2019-03/2021<br>Plus Two at Rahamaniya hss ayancherry,kozhikode</li><br>
+                    <li>06/2018-03/2019<br>SSLC at THSS vadakara,kozhikode</li><br>
+                </ul>
+             </div>  
+                
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- --------------------------------about section end------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="WhatsApp Image 2024-09-06 at 12.04.20_3d2c0b43.jpg">
+                    <div class="layer">
+                        <h3>Cloud Storage</h3>
+                        <p>This web app using to store data and 
+                            sharing to others by using this web app</p>
+                        <a href="HYBRID ENCRYPTION FOR CLOUD.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        
+                     </div>
+                    </div>
+                    <div class="work"><img src="WhatsApp Image 2024-09-06 at 12.04.20_7b09b32c.jpg">
+                        <div class="layer">
+                            <h3>Satic webpage</h3>
+                            <p>This is aStatic webpage created by using 
+                                html and css</p>
+                            <a href="airbnnb.html"target="_blank"><i class="fa-solid fa-link"></i></a>
+                         </div>
+                    </div>
+                    <div class="work">
+                    <img src="WhatsApp Image 2024-09-06 at 12.04.20_41d8e27f.jpg">
+                    <div class="layer">
+                        <h3>Bank Balance</h3>
+                        <p>This is a bank balance checker also deposit and withdraw 
+                            option created by html css and js</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<!-- -----------------------contact------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="contact-left1">
+                <p>niyasvv642@gmail.com</p> 
+                 <p>9447119400</p>
+                 </div>
+                
+             </div>
+            <div class="contact-right">
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email"required>
+                <textarea rows="7" id="message" placeholder="Your Message"></textarea>
+                <button onclick="sendMail()" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+            </div>
+            </div> 
+        </div>
+
+    </div>
+ 
+<!-- -----------------------------copyright----------------------------------------- -->
+
+<div class="copyright">
+    <p>All rights reserved @mohammed Niyas 2024</p>
+    <div class="social-icons">
+        <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+        <a href="https://www.instagram.com/n1yaaaaas?igsh=MWJiNHduOHBsMWxhNA%3D%3D&utm_source=qr " target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>
